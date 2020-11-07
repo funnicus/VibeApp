@@ -1,43 +1,35 @@
 {
-  "name": "community",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.5",
-    "@testing-library/react": "^11.1.1",
-    "@testing-library/user-event": "^12.2.0",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.19.3",
-    "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.9",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.0",
-    "typescript": "^4.0.5",
-    "web-vitals": "^0.2.4"
-  },
+  "name": "vibeapp",
+  "version": "1.0.0",
+  "description": "Send positive vibes to your fellow students!",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build:ui": "rm -rf build && cd client && npm run build --prod && cp -r build .."
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funnicus/VibeApp.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "typescript",
+    "reactjs"
+  ],
+  "author": "Juhana Kuparinen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/funnicus/VibeApp/issues"
+  },
+  "homepage": "https://github.com/funnicus/VibeApp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
