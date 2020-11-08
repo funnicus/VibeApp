@@ -1,0 +1,27 @@
+#send-vibes-form div {
+    margin: 20px;
+    display: inline-block;
+}
+
+#send-vibes-form div input {
+    margin: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: orange;
+    border-bottom: 2px solid black;
+    color: rgb(88, 88, 88);
+}
+
+#send-vibes-form button {
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#send-vibes-form button:hover {
+    cursor: pointer;
+    color: grey;
+}

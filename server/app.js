@@ -23,6 +23,7 @@ app.use(reactApp);
 app.use('/api/test', testRouter);
 app.use('/api/vibes', vibeRouter);
 
+//shitty catch-all route
 app.use('*', reactApp);
 
 module.exports = app;

@@ -11,6 +11,8 @@ import SendVibes from './components/SendVibes';
 
 import vibeService from './services/vibes';
 
+import './App.css';
+
 import { Vibe } from './types';
 
 const App: React.FC = () => {
@@ -33,23 +35,25 @@ const App: React.FC = () => {
 
     return (
             <Router>
-                <div>
+                <div id='home'>
                     <Nav />
                     <Switch>
                         <Route path="/send-vibes">
-                            <SendVibes />
+                            <SendVibes />      
+                            <br />
+                            <em>Vibe app by Juhana Kuparinen, junction hackathon 2020</em>
                         </Route>
                         <Route path="/">
                             <Home />
-                            <div>
+                            <div id='random-vibe'>
                                 <h3>Here is a random vibe for you!</h3>
-                                <p>{vibe ? vibe : 'waiting for a vibe...'}</p>
+                                <p id='vibe'>{vibe ? vibe : 'waiting for a vibe...'}</p>
                                 <button onClick={getAVibe}>Get a new vibe!</button>
+                                <br />
+                                <em>Vibe app by Juhana Kuparinen, junction hackathon 2020</em>
                             </div>
                         </Route>
                     </Switch>
-                    <br />
-                    <em>community by Juhana Kuparinen, junction hackathon 2020</em>
                 </div>
             </Router>
     );

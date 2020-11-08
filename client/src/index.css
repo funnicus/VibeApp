@@ -2,3 +2,8 @@ html {
     margin: 0;
     font-family: sans-serif;
 }
+
+body {
+    background: rgb(255,128,0);
+    background: linear-gradient(90deg, rgba(255,128,0,1) 0%, rgba(208,118,14,1) 40%, rgba(255,235,0,1) 100%);
+}

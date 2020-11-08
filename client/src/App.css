@@ -1,0 +1,31 @@
+#home {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: orange;
+}
+
+#random-vibe {
+    background-color: wheat;
+    width: 100%;
+    padding-top: 20px;
+    height: 30vh;
+}
+
+#vibe {
+    margin: 50px;
+}
+
+#random-vibe button {
+    background-color: rgb(161, 161, 161);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#random-vibe button:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.493);
+}
