@@ -10,6 +10,7 @@ const Nav: React.FC = () => {
               <ul>
                   <li><Link to="/">Home</Link></li>
                   <li><Link to="/send-vibes">Send some vibes!</Link></li>
+                  <li><Link to="/chat">Vibe with your homies!</Link></li>
               </ul>
           </nav>
           <hr/>

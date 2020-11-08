@@ -8,6 +8,7 @@ import {
 import Nav from './components/Nav';
 import Home from './components/Home';
 import SendVibes from './components/SendVibes';
+import Chat from './components/Chat';
 
 import vibeService from './services/vibes';
 
@@ -40,6 +41,11 @@ const App: React.FC = () => {
                     <Switch>
                         <Route path="/send-vibes">
                             <SendVibes />      
+                            <br />
+                            <em>Vibe app by Juhana Kuparinen, junction hackathon 2020</em>
+                        </Route>
+                        <Route path="/chat">
+                            <Chat />      
                             <br />
                             <em>Vibe app by Juhana Kuparinen, junction hackathon 2020</em>
                         </Route>
